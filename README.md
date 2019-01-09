@@ -16,11 +16,11 @@ Single page web application example. <br>
 * [store.js](https://github.com/marcuswestin/store.js) **(LocalStorge library)**
 * NiceScroll 
 ### Some useful services we used : ###
-* [Faviconit](http://faviconit.com) **(To generate favi icon of the best practices size)**
+* [Faviconit](http://faviconit.com) **(To generate favicons with the best practices size)**
 
 ### Terms of service : ###
 * We are not responsible for any loss or theft of your data.
-* Your data will save in your browser. 
+* Your data will save in your browser.
 <hr>
 BaselAkasha <br>
 BaselAkasha@gmail.com
