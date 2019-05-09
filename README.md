@@ -1,27 +1,32 @@
 # AngularJs list project. #
-Single page web application example. <br>
+Single page web application example.
+
 **[Preview page (demo)](https://baselakasha.github.io/angular_List/)**
 <hr>
 
-### Notes : ###
+### Notes :
 
-* You dont need Internet to run this app.
-* Run app in localhost or server. 
-* Dont use sensitive information in app
-* Enjoy ! 
-### Bulit with : ###
+* You don't need the Internet to run this app.
+* Run the app in localhost or server. 
+* Don't use this app to store sensitive information.
+* Enjoy! 
+
+### Built with :
+
 * AngularJs
 * Jquery
 * Font Awesome 
 * [store.js](https://github.com/marcuswestin/store.js) **(LocalStorge library)**
 * NiceScroll 
-### Some useful services we used : ###
-* [Faviconit](http://faviconit.com) **(To generate favicons with the best practices size)**
+### Useful services we used : 
+* [Faviconit](http://faviconit.com) **(To generate favicons with best practices size)**
 
-### Terms of service : ###
+### Terms of service : 
 * We are not responsible for any loss or theft of your data.
 * Your data will save in your browser.
+
 <hr>
-BaselAkasha <br>
-BaselAkasha@gmail.com
+BaselAkasha 
+
+Contact@BaselAkasha.com
 
