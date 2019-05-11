@@ -6,7 +6,6 @@ Single page web application example.
 
 ## Notes :
 
-* You don't need the Internet to run this app.
 * Run the app in localhost or server. 
 * Don't use this app to store sensitive information.
 * Enjoy! 
