@@ -204,12 +204,11 @@ myApp.controller("settingController",function($scope){
      
  });   
 
-window.onload=function(){
-    /// Hide loading 
-    var loadDiv = document.getElementById("loadDiv");
+window.onload=function(){   
           
     setTimeout(function(){
         $("#loadDiv").fadeOut(200);
+        $("#loadDiv").removeClass("d-flex");
     },500);
   
     /// Nice scroll 

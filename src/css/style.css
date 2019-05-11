@@ -1,9 +1,19 @@
 html ,body {
     margin:0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
+}
+.container-fluid{
+    padding: 0px;
 }
 #mainDiv{
     overflow-y:scroll;
     max-height: 320px;
+}
+#loadDiv{
+    z-index: 4;
+    position: absolute;
+    background-color:#DD0031;
+    color: white;
 }
