@@ -64,7 +64,7 @@ if(store){ ///  if storeJs loaded
     }
 }
 else{
-    alert("Proplem when load store.js library please try reload the page or another browser ");
+    alert("Proplem while loading store.js library please try to reload the page or open this page from another browser ");
 } 
 
 function searchInItems(txt){
@@ -83,7 +83,7 @@ function searchInItems(txt){
  }
 
 function light(obj){  
-	  /// scroll to the element and make background green for 1.1 sec
+	  /// Scroll to the element and make the background green for 1.1 sec
     "use strict";
     obj.scrollIntoView(); 
     obj.style.backgroundColor ="#97ff80";
@@ -94,12 +94,12 @@ function light(obj){
 }
 
 function arrayUpt(es){ /// es must to be $scope
-    /// update items array and store it 
+    /// Update the items array and store it 
     "use strict";
-     itemsJs=toUppSort(itemsJs); /// make first letter for each element of array capital and sort 
-     es.items=itemsJs; /// update items 
+     itemsJs=toUppSort(itemsJs); /// Make first letter for each element of array capital and sort 
+     es.items=itemsJs; /// Update items 
      if(store){ 
-         store.set("data",itemsJs); /// store items
+         store.set("data",itemsJs); /// Store items
      }
 }
 
@@ -107,12 +107,12 @@ myApp.controller("mainController",function($scope){
     "use strict";
      $scope.items = toUppSort(itemsJs); 
      $scope.edit = function(itemTxt){ /// Edit function
-         var obj = searchInItems(itemTxt), /// found item user need to edit by item text (come from index.html )
-              arrayInd= itemsJs.indexOf(itemTxt), /// found itemsJs array index 
+         var obj = searchInItems(itemTxt), /// Found item user need to edit by item text (come from index.html )
+              arrayInd= itemsJs.indexOf(itemTxt), /// Found itemsJs array index 
               userEnter = prompt("Edit Value",itemTxt);
-         if(userEnter == "" || userEnter== null){} /// if user left prompt empty or click cancel
+         if(userEnter == "" || userEnter== null){} /// If user left prompt empty or click cancel
          else{ 
-             itemsJs[arrayInd] = userEnter;  /// replace old value to new value
+             itemsJs[arrayInd] = userEnter;  /// Replace old value to new value
              arrayUpt($scope); 
              setTimeout(function(){
                  var newObj = searchInItems(userEnter);
@@ -122,18 +122,18 @@ myApp.controller("mainController",function($scope){
     };
     $scope.del = function(txt){
         "use strict";
-         if(confirm(" Delete : (" + txt+ ") ?")){ /// get confirm from user , txt come from index.html 
-             var arrayIndexDel= itemsJs.indexOf(txt); /// found index of item in itemsJs array
-             itemsJs.splice(arrayIndexDel,1); /// delete the item from array
+         if(confirm(" Delete : (" + txt+ ")?")){ /// Get confirm from user , txt come from index.html 
+             var arrayIndexDel= itemsJs.indexOf(txt); /// Found index of item in itemsJs array
+             itemsJs.splice(arrayIndexDel,1); /// Delete the item from array
              arrayUpt($scope);            
          }
      };
      $scope.add = function(){
          "use strict";
-          var userAdd = prompt("Enter value :");
-          if(userAdd=="" || userAdd == null){} /// if user left the prompt empty or click cancel
+          var userAdd = prompt("Enter a text:");
+          if(userAdd=="" || userAdd == null){} /// If user left the prompt empty or click cancel
           else{
-	           itemsJs.push(userAdd);   /// push user text need to add to itemsJs Array
+	           itemsJs.push(userAdd);   /// Push user text need to add to itemsJs Array
               arrayUpt($scope);
               setTimeout(function(){
 	               var newObj = searchInItems(userAdd);
@@ -143,7 +143,7 @@ myApp.controller("mainController",function($scope){
           }
       };
       $scope.export = function(){  
-      /// make a txt has items Each item in a line and download it 
+      /// Make a txt has items each item in a line and download it 
           
           var txt = "";
           for(var i= 0;i<itemsJs.length;i++){
@@ -155,7 +155,7 @@ myApp.controller("mainController",function($scope){
 	      }    
 		    else{
 			      store.set("efn",1);
-		         var name = prompt("Enter download file name ");
+		         var name = prompt("Enter the sfile name ");
 		         
 			  }
 			 if(name!= null && name.length !=0){
@@ -164,7 +164,8 @@ myApp.controller("mainController",function($scope){
 			 
 	       
 	   };
-}); /// main controll close
+}); /// Main controll close
+
 myApp.controller("settingController",function($scope){
 	 "use strict";
 	  var dfn = document.getElementById("dfnInp"),
@@ -204,14 +205,14 @@ myApp.controller("settingController",function($scope){
  });   
 
 window.onload=function(){
-    ///hide loading 
+    /// Hide loading 
     var loadDiv = document.getElementById("loadDiv");
           
     setTimeout(function(){
         $("#loadDiv").fadeOut(200);
     },500);
   
-    /// nice scroll 
+    /// Nice scroll 
    $("#mainDiv").niceScroll({
        cursorcolor:"#DD0031",
        cursorwidth:"5px"
