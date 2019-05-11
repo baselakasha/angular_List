@@ -1,4 +1,5 @@
 var myApp = angular.module("app",["ngRoute"]);
+
 myApp.config(function($routeProvider){
         $routeProvider
         .when("/",{
@@ -11,6 +12,7 @@ myApp.config(function($routeProvider){
 	     })
 	     .otherwise({redirectTo:'/'});
 });
+
 function download(filename, text) {
 	
 	 "use strict";
@@ -33,6 +35,7 @@ function  upperStr(obj){
      var firstLatter = obj[0].toUpperCase();
      return firstLatter + obj.slice(1);
 }
+
 function upperArray(array){
      /// Make the first character of each element in the array capital
     "use strict";
@@ -43,6 +46,7 @@ function upperArray(array){
      }
      return finalArray ;
 }
+
 function toUppSort(array){ 
     /* Make the first character of each element in the array capital
      and sort array */
@@ -50,6 +54,7 @@ function toUppSort(array){
      var finalArray= upperArray(array);
      return finalArray.sort() ;
 } 
+
 var  itemsJs =  ["test 1","Test 2","Test 3"]; /// default items 
 itemsJs = toUppSort(itemsJs);  /// sort and make each element of array capital    
 if(store){ ///  if storeJs loaded
@@ -61,6 +66,7 @@ if(store){ ///  if storeJs loaded
 else{
     alert("Proplem when load store.js library please try reload the page or another browser ");
 } 
+
 function searchInItems(txt){
         "use strict";
         var obj = document.getElementsByClassName("itemsP"),
@@ -75,7 +81,8 @@ function searchInItems(txt){
             }
         }
  }
- function light(obj){  
+
+function light(obj){  
 	  /// scroll to the element and make background green for 1.1 sec
     "use strict";
     obj.scrollIntoView(); 
@@ -85,6 +92,7 @@ function searchInItems(txt){
         obj.style.backgroundColor="white";
     },1100);
 }
+
 function arrayUpt(es){ /// es must to be $scope
     /// update items array and store it 
     "use strict";
@@ -94,6 +102,7 @@ function arrayUpt(es){ /// es must to be $scope
          store.set("data",itemsJs); /// store items
      }
 }
+
 myApp.controller("mainController",function($scope){
     "use strict";
      $scope.items = toUppSort(itemsJs); 
@@ -131,7 +140,7 @@ myApp.controller("mainController",function($scope){
                   light(newObj);
               },150);
               
-          }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+          }
       };
       $scope.export = function(){  
       /// make a txt has items Each item in a line and download it 
@@ -210,9 +219,3 @@ window.onload=function(){
 
 
 };
-     
-        
-    
-
-
-

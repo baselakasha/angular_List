@@ -5,20 +5,9 @@
           <meta name="viewport" content="width=device-width, initial-scale=1" /> 
           <meta http-equiv="cache-control" content="no-cache" /> 
 
-          <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js'></script> 
-          <script>window.angular || document.write(unescape("%3Cscript src='libs/angular.min.js' %3E%3C/script%3E")); </script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
-
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/store.js/1.3.20/store.min.js" ></script> 
-          <script>window.store ||  document.write(unescape("%3Cscript src='libs/store.min.js' %3E%3C/script%3E"));</script>
-         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>     
-          <script> window.jQuery ||  document.write(unescape("%3Cscript src='libs/jquery-3.1.1.min.js' %3E%3C/script%3E"));</script>
-     
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
-          <script>window.jQuery.nicescroll || document.write(unescape("%3Cscript src='libs/jquery.nicescroll.min.js' %3E%3C/script%3E")); </script>
-      
-          <script defer src="libs/fontawesome-all.min.js"></script>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
           
 	    	 <!-- ****** favicon ****** -->
 		 
@@ -42,7 +31,8 @@
 			 <meta name="msapplication-TileColor" content="#FFFFFF">
 			 <meta name="msapplication-TileImage" content="src/img/favicon-144.png">
 	  	  	 <meta name="msapplication-config" content="src/img/browserconfig.xml">
-			 <!-- ****** favicons ****** -->			
+		
+          <!-- ****** favicons ****** -->			
           <link rel="stylesheet" href="src/css/style.css" /> 
           <!-- Address bar color -->
           <!-- Chrome, Firefox OS and Opera -->
@@ -53,12 +43,41 @@
           <meta name="apple-mobile-web-app-status-bar-style" content="#DD0031" />
 
     </head>
-    <body >       
-        <div id="loadDiv" align="center">Loading ...</div>   <!-- Loading screen -->
+    <body>
+        <div class="container-fluid">
+            <div id="loadDiv" align="center">Loading ...</div>   <!-- Loading screen -->
      
-        <div ng-view="">
+            <div ng-view="" class="container-fluid">
+            </div>
         </div>
-
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script> window.jQuery ||  document.write(unescape("%3Cscript src='libs/jquery-3.1.1.min.js' %3E%3C/script%3E"));</script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/store.js/1.3.20/store.min.js" ></script> 
+          <script>window.store ||  document.write(unescape("%3Cscript src='libs/store.min.js' %3E%3C/script%3E"));</script>
+         
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+        <script>window.jQuery.nicescroll || document.write(unescape("%3Cscript src='libs/jquery.nicescroll.min.js' %3E%3C/script%3E")); </script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js'></script> 
+          <script>window.angular || document.write(unescape("%3Cscript src='libs/angular.min.js' %3E%3C/script%3E")); </script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular-animate.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.7/angular-sanitize.js"></script>
+        
+        <script src="https://raw.githubusercontent.com/Morgul/ui-bootstrap4/master/docs/ui-bootstrap-tpls-3.0.2.min.js"></script>
+        
+        
         <script src="src/js/script.js"></script>
         
       </body>
