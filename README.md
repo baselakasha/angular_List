@@ -17,8 +17,6 @@ Single page web application example.
 * Font Awesome 
 * [store.js](https://github.com/marcuswestin/store.js) **(LocalStorge library)**
 * NiceScroll 
-## Useful services we used : 
-* [Faviconit](http://faviconit.com) **(To generate favicons with best practices size)**
 
 ## Terms of service : 
 * We are not responsible for any loss or theft of your data.
