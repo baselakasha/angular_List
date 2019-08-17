@@ -8,7 +8,6 @@ Single page web application example.
 
 * Run the app in localhost or server. 
 * Don't use this app to store sensitive information.
-* Enjoy! 
 
 ## Built with :
 
