@@ -15,7 +15,6 @@ Single page web application example.
 * Jquery
 * Font Awesome 
 * [store.js](https://github.com/marcuswestin/store.js) **(LocalStorge library)**
-* NiceScroll 
 
 ## Terms of service : 
 * We are not responsible for any loss or theft of your data.
