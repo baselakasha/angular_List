@@ -1,6 +1,12 @@
 # AngularJs list project. #
 Single page web application example.
 
+
+## Important: 
+
+* I have written this program a long time ago. Some libraries and functions might be outdated and deprecated. Also, the code is not tested and needs refactoring. I have kept it like that becuase I like to look at it from time to time as see how far I have progressed ^_^. 
+
+
 **[Preview page (demo)](https://baselakasha.github.io/angular_List/)**
 <hr>
 
