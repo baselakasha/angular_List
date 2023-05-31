@@ -14,6 +14,6 @@ html ,body {
 #loadDiv{
     z-index: 4;
     position: absolute;
-    background-color:#DD0031;
+    background-color:#c4c4c4;
     color: white;
 }
